@@ -15,7 +15,7 @@ exclude = [
 
   [[ build.env ]]
     name="BP_WEB_SERVER"
-    value="httpd"
+    value="php-httpd"
 
   [[ build.env ]]
     name="BP_WEB_SERVER_ROOT"
