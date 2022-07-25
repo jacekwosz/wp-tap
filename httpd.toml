@@ -4,10 +4,10 @@ exclude = [
 ]
 
   [[build.buildpacks]]
-  uri = "tanzu-buildpacks/httpd"
+  uri = "paketo-buildpacks/php-httpd"
 
   [[build.buildpacks]]
-  uri = "tanzu-buildpacks/php"
+  uri = "paketo-buildpacks/php"
 
   [[ build.env ]]
     name="BP_NODE_RUN_SCRIPTS"
