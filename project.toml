@@ -4,3 +4,6 @@ value='httpd'
 [[ build.env ]]
 name='BP_PHP_WEB_DIR'
 value='src'
+[[ build.env ]]
+name='BP_PHP_ENABLE_HTTPS_REDIRECT'
+value='false'
