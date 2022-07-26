@@ -4,10 +4,7 @@ exclude = [
 ]
 
   [[build.buildpacks]]
-  uri = "paketo-buildpacks/php-httpd"
-
-  [[build.buildpacks]]
-  uri = "paketo-buildpacks/php"
+  uri = "paketo-buildpacks/web-servers"
 
   [[ build.env ]]
     name="BP_NODE_RUN_SCRIPTS"
@@ -15,11 +12,11 @@ exclude = [
 
   [[ build.env ]]
     name="BP_WEB_SERVER"
-    value="php-httpd"
+    value="httpd"
 
   [[ build.env ]]
     name="BP_WEB_SERVER_ROOT"
-    value="dist"
+    value="build"
 
   [[ build.env ]]
     name="BP_WEB_SERVER_ENABLE_PUSH_STATE"
