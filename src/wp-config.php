@@ -26,7 +26,7 @@ define( 'DB_NAME', fopen('/bindings/db/database', 'r'));
 define( 'DB_USER', fopen('/bindings/db/username', 'r' ));
 
 /** MySQL database password */
-define( 'DB_PASSWORD', fopen('/bindings/db/oasswird', 'r'));
+define( 'DB_PASSWORD', fopen('/bindings/db/password', 'r'));
 
 /** MySQL hostname */
 define( 'DB_HOST',fopen('/bindings/db/host', 'r') . ':' . fopen('/bindings/db/port', 'r'));
