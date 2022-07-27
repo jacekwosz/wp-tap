@@ -46,14 +46,22 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY', $_SERVER['AUTH_KEY'] );
-define( 'SECURE_AUTH_KEY', $_SERVER['SECURE_AUTH_KEY'] );
-define( 'LOGGED_IN_KEY', $_SERVER['LOGGED_IN_KEY'] );
-define( 'NONCE_KEY', $_SERVER['NONCE_KEY'] );
-define( 'AUTH_SALT', $_SERVER['AUTH_SALT'] );
-define( 'SECURE_AUTH_SALT', $_SERVER['SECURE_AUTH_SALT'] );
-define( 'LOGGED_IN_SALT', $_SERVER['LOGGED_IN_SALT'] );
-define( 'NONCE_SALT', $_SERVER['NONCE_SALT'] );
+define( 'AUTH_KEY',         'e?9G>OyCE+M([VT,+!?Ay^Qs1>BS Rlw;62uVMU.P5Tox8lxn[<RUHY4!zlBfjcO' );
+
+define( 'SECURE_AUTH_KEY',  '`8{?>q7i#}`^VC,<r5`C/;,9}BKjqzi#G`mjSL+ZXMSu;Mvb4$E_~-!?D[rU`8Y' );
+
+define( 'LOGGED_IN_KEY',    '4(Ms(#w(J+!LH:`4cLO)fw0#95N/!8 UhI`{.:wCa,AvJ4#wtmH%R]YS%1;$p4c6' );
+
+define( 'NONCE_KEY',        ';xp$Utjlcm,!OHMmQ,Wn-ax10:wjPS2>OOZjYgO:usM4UJZd2;41|e5NKg_^h;yE' );
+
+define( 'AUTH_SALT',        '.`HC*+?~XU`Ih|x#]9Xa5[*1nE$1%q`-}LrgA<4IG(@1sNbUg<t#MWw]WE]Ggz-=' );
+
+define( 'SECURE_AUTH_SALT', '~=Igj5IhSzd&}aAoF52%&$^Y)lpvkG=+gm$(pFW3|E%o<KKnUYS6]0Xxa80F@8o=' );
+
+define( 'LOGGED_IN_SALT',   '{gXyE$H3Yy>:L^/t~S(?[Q9{4<&1ghE=l<FCX+MbWtuzAA ?py}at4y@m9<mEJRE' );
+
+define( 'NONCE_SALT',       'T^+^0{eFWh&F6hb!`Gafz![mhaHqTNDt]X37D#7pK)cHaXHl({*oO!B83f3+hL<@' );
+
 /**#@-*/
 
 /**
