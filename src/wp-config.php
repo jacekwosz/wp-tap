@@ -23,13 +23,13 @@
 define( 'DB_NAME', fopen('/bindings/db/database', 'r'));
 
 /** MySQL database username */
-define( 'DB_USER', $_SERVER['/bindings/db/username'] );
+define( 'DB_USER', fopen('/bindings/db/username', 'r' ));
 
 /** MySQL database password */
-define( 'DB_PASSWORD', $_SERVER['/bindings/db/password'] );
+define( 'DB_PASSWORD', fopen('/bindings/db/oasswird', 'r'));
 
 /** MySQL hostname */
-define( 'DB_HOST', $_SERVER['/bindings/db/host'] . ':' . $_SERVER['/bindings/db/port'] );
+define( 'DB_HOST',fopen('/bindings/db/host', 'r') . ':' . fopen('/bindings/db/port', 'r'));
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
