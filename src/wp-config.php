@@ -29,7 +29,7 @@ define( 'DB_USER', strval(fopen('/bindings/db/username', 'r' )));
 define( 'DB_PASSWORD', strval(fopen('/bindings/db/password', 'r')));
 
 /** MySQL hostname */
-define( 'DB_HOST',strval(fopen('/bindings/db/host', 'r')) . ':' . strval(fopen('/bindings/db/port', 'r')));
+define( 'DB_HOST',strval(fopen('/bindings/db/host', 'r')) . ':' . fopen('/bindings/db/port', 'r'));
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
