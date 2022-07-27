@@ -26,7 +26,7 @@ define( 'DB_NAME', '$RDS_DB_NAME' );
 define( 'DB_USER', '$RDS_DB_USER' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', '$RDS_DB_PASSWORD] );
+define( 'DB_PASSWORD', '$RDS_DB_PASSWORD' );
 
 /** MySQL hostname */
 define( 'DB_HOST', '$RDS_HOSTNAME' . ':' . '$RDS_PORT' );
