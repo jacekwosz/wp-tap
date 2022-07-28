@@ -1,7 +1,7 @@
 <?php
 $filename = "/bindings/db/database";
 $handle =(fopen( $filename, 'r'));
-define( 'DB_NAME', fread($handle, filesize($filename));
+define( 'DB_NAME', fread($handle, filesize($filename)));
 fclose($handle);
 
 /** MySQL database username */
