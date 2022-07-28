@@ -13,7 +13,7 @@ define( 'DB_HOST', strval(fopen('/bindings/db/host', 'r')));
 printf (DB_NAME);
 
 /** MySQL database username */
-printf( DB_USER;
+printf(DB_USER);
 
 /** MySQL database password */
 printf( 'DB_PASSWORD');
