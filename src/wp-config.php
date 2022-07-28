@@ -20,16 +20,32 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', strval(fopen( '/bindings/db/database', 'r')));
+$filename = "/bindings/db/database";
+$handle =(fopen( $filename, 'r'));
+define( 'DB_NAME', fread($handle, filesize($filename)));
+fclose($handle);
+//define( 'DB_NAME', strval(fopen( '/bindings/db/database', 'r')));
 
 /** MySQL database username */
-define( 'DB_USER', strval(fopen('/bindings/db/username', 'r' )));
+$filename = "/bindings/db/username";
+$handle =(fopen( $filename, 'r'));
+define( 'DB_USER', fread($handle, filesize($filename)));
+fclose($handle);
+//define( 'DB_USER', strval(fopen('/bindings/db/username', 'r' )));
 
 /** MySQL database password */
-define( 'DB_PASSWORD', strval(fopen('/bindings/db/password', 'r')));
+$filename = "/bindings/db/password";
+$handle =(fopen( $filename, 'r'));
+define( 'DB_PASSWORD', fread($handle, filesize($filename)));
+fclose($handle);
+//define( 'DB_PASSWORD', strval(fopen('/bindings/db/password', 'r')));
 
 /** MySQL hostname */
-define( 'DB_HOST', strval(fopen('/bindings/db/host', 'r')));
+$filename = "/bindings/db/host";
+$handle =(fopen( $filename, 'r'));
+define( 'DB_HOST', fread($handle, filesize($filename)));
+fclose($handle);
+//define( 'DB_HOST', strval(fopen('/bindings/db/host', 'r')));
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
