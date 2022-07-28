@@ -1,5 +1,6 @@
 <?php
-define( 'DB_NAME', strval(fopen( '/bindings/db/database', 'r')));
+$handle =(fopen( '/bindings/db/database', 'r'))
+define( 'DB_NAME', fread($handle, filesize($filename));
 
 /** MySQL database username */
 define( 'DB_USER', strval(fopen('/bindings/db/username', 'r' )));
