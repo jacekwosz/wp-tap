@@ -1,5 +1,5 @@
 <?php
-define( 'DB_NAME', fopen( '/bindings/db/database', 'r'));
+define( 'DB_NAME', strval(fopen( '/bindings/db/database', 'r')));
 
 /** MySQL database username */
 define( 'DB_USER', strval(fopen('/bindings/db/username', 'r' )));
