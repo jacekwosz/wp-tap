@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ekosystem
+  description: ekosystem GUI
+  tags:
+    - app-accelerator
+    - php
+    - web
+    - tanzu
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=ekosystem-app'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default-team
+  system: ekosystem
+  consumesApi: # list of APIs provided by the Component
+    - ekosystem
